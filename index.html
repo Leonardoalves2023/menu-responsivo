@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu responsivo</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pc.css">
+
+
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>meu site </h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clicou()">
+            menu
+            </span>
+        <nav id="nave">
+            <ul>
+                <li><a href="">opc1</a></li>
+                <li><a href="">opc2</a></li>
+                <li><a href="">opc3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quidem quis neque accusantium aliquam iure, at ex assumenda numquam deserunt facilis laborum optio voluptatum quod quae rerum animi? Dignissimos, ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt consectetur non reprehenderit, quod odio ab repudiandae nisi voluptatem nemo sapiente, nam provident, labore nobis. Ratione repellat enim maiores quos!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint mollitia voluptatum dicta neque suscipit repellendus pariatur at fugiat ab, cumque tempora ea, quod vel labore! Voluptas porro quo maxime saepe!</p>
+        </article>
+    </main>
+    <script>
+        function tamanho(){
+            if(window.innerWidth >= 768){
+                nave.style.display = 'block'
+            }else{
+                nave.style.display = 'none'
+            }
+        }
+        function clicou(){
+            if(nave.style.display == 'block'){
+                nave.style.display = 'none'
+            }else{
+                nave.style.display = 'block'
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
